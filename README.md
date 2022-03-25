@@ -1,54 +1,64 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <img src="https://user-images.githubusercontent.com/26466516/107675788-31f54e00-6c77-11eb-96c9-58fd8a4c69ac.png" alt="Gatsby and TypeScript">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&style=for-the-badge&color=24B36B&labelColor=000000" alt="PRs welcome!" />
+
+  <img alt="License" src="https://img.shields.io/github/license/jpedroschmitz/gatsby-starter-ts?style=for-the-badge&color=24B36B&labelColor=000000">
+
+  <a href="https://twitter.com/intent/follow?screen_name=jpedroschmitz">
+    <img src="https://img.shields.io/twitter/follow/jpedroschmitz?style=for-the-badge&color=24B36B&labelColor=000000" alt="Follow @jpedroschmitz" />
   </a>
 </p>
-<h1 align="center">
-  Gatsby minimal TypeScript starter
-</h1>
 
-## 🚀 Quick start
+<br>
 
-1.  **Create a Gatsby site.**
+A TypeScript starter for Gatsby. No plugins and styling. Exactly the necessary to start 🔥
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+No plugins installed, great for advanced users.
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
+- 📏 **ESLint** — Pluggable JavaScript linter
+- 💖 **Prettier** - Opinionated Code Formatter
+- 🐶 **Husky** — Use git hooks with ease
+- 📄 **Commitizen** - Conventional commit messages CLI
+- 🐐 **Tests** - Jest and Testing Library
+- 🚓 **Commitlint** - Lint commit messages
+- 🖌 **Renovate** - Dependency update tool
+- 🚫 **lint-staged** - Run linters against staged git files
+- 👷 **PR Workflow** - Run Type Check & Linters on pull requests
+- 🗂 **Root import** - Import folders and files using the `@` prefix.
 
-2.  **Start developing.**
+## 🚀 Getting started
 
-    Navigate into your new site’s directory and start it up.
+The best way to start with this template is using the Gatsby CLI.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+```
+npx gatsby new starter-ts https://github.com/jpedroschmitz/gatsby-starter-ts
+```
 
-3.  **Open the code and start customizing!**
+If you prefer you can clone this repository and run the following commands inside the project folder:
 
-    Your site is now running at http://localhost:8000!
+> By default, this starter uses Yarn, but this choice is yours. If you'd like to switch to npm, delete the `yarn.lock` file, install the dependencies with `npm install`, and change the CI workflows, Husky Git hooks, and lint-staged steps to use npm commands.
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+1. `yarn`;
+2. `yarn start`;
 
-4.  **Learn more**
+To view the project you can open `http://localhost:8000`.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+## 🤝 Contributing
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+1. Fork this repository;
+2. Create your branch: `git checkout -b my-new-feature`;
+3. Commit your changes: `git commit -m 'Add some feature'`;
+4. Push to the branch: `git push origin my-new-feature`.
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+**After your pull request is merged**, you can safely delete your branch.
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+## 📝 License
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+---
 
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+Made with ♥ by João Pedro Schmitz

@@ -1,0 +1,44 @@
+@import "../../styles/mixins"
+
+.photo-portrait
+    float: left
+    @include xxs
+        margin-right: 1rem
+    @include md
+        margin: 0 2.5rem 2rem 0
+    img
+        border-radius: 5px 5px
+
+.cv
+    min-height: 100vh
+    @include xxs
+        padding-top: 10vh
+    @include lg
+        padding-top: 10vh
+
+.cv-header
+    @include xxs
+        margin-top: 0
+        display: flex
+        margin-top: 2rem
+        font-size: 0.6em
+    @include xs
+        margin-top: 5em
+        font-size: 1.3em
+    @include sm
+        font-size: 1em
+        display: block
+
+.cv-subtitle
+    text-align: left
+    @include xxs
+        font-size: 2.5em
+    @include xs
+        font-size: 1.1em
+    @include sm
+        font-size: 1.4em
+        display: block
+
+.cv-description
+    @include xxs
+        margin-top: 2em

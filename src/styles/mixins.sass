@@ -1,0 +1,42 @@
+// Small tablets and large smartphones (landscape view)
+$screen-xxs-min: 300px
+
+$screen-xs-min: 600px
+
+// Small tablets (portrait view)
+$screen-sm-min: 768px
+
+$screen-md-min: 1000px
+
+// Tablets and small desktops
+$screen-lg-min: 1200px
+
+// Large tablets and desktops
+$screen-xl-min: 1400px
+
+@mixin xxs
+    @media (min-width: #{$screen-xxs-min})
+        @content
+
+@mixin xs
+    @media (min-width: #{$screen-xs-min})
+        @content
+
+@mixin sm
+    @media (min-width: #{$screen-sm-min})
+        @content
+
+// Medium devices
+@mixin md
+    @media (min-width: #{$screen-md-min})
+        @content
+
+// Large devices
+@mixin lg
+    @media (min-width: #{$screen-lg-min})
+        @content
+
+// Extra large devices
+@mixin xl
+    @media (min-width: #{$screen-xl-min})
+        @content

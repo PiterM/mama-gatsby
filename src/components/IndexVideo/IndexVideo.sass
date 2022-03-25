@@ -1,0 +1,39 @@
+@import "../../styles/mixins"
+
+.video-gallery
+    margin-top: 15vw
+    h2
+        @include xxs
+            text-align: center
+        @include lg
+            text-align: left
+    p
+        @include xs
+            text-align: center
+        @include lg
+            text-align: left
+
+.video-description
+    @include xxs
+        text-align: center
+    @include sm
+        text-align: left
+
+.videos
+    margin: 2rem 0 5rem 0
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    @include xxs
+        grid-template-columns: repeat(1, 1fr)
+    @include sm
+        grid-template-columns: repeat(2, 1fr)
+    @include lg
+        grid-template-columns: repeat(3, 1fr)
+
+.video
+    margin: 5px
+    width: 424px
+    height: 327px
+    margin: 0 auto 0 auto
+    padding: 2px
+    width: 100%

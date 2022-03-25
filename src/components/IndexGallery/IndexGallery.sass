@@ -1,0 +1,134 @@
+@import "../../styles/mixins"
+
+.photo-gallery
+    margin-top: 20vh
+    padding: .9375rem 0
+
+    h2
+        @include xxs
+            text-align: center
+        @include lg
+            text-align: left
+    p
+        @include xs
+            text-align: center
+        @include lg
+            text-align: left
+
+.gallery-description
+    @include xxs
+        text-align: center
+    @include sm
+        text-align: left
+
+.gallery-grid
+    margin-top: 2rem
+    // div
+    //     position: relative
+    //     cursor: pointer
+    //     border-radius: 5px 5px
+    //     margin: 0 auto
+    //     &:before, &:after
+    //         transition: .3s opacity ease
+    //         opacity: 0
+    //     &:after
+    //         font-size: 80px
+    //         position: absolute
+    //         transform: translate3d(-50%, -50%, 0) rotate(-45deg)
+    //         color: #fff
+    //         left: 50%
+    //         top: 50%
+    //         display: block
+    //     &:before
+    //         content: ""
+    //         position: absolute
+    //         top: 0
+    //         bottom: 4px
+    //         left: 0
+    //         right: 0
+    //         background: rgba(#fff, 0.15)
+    //         display: block
+    //         border-radius: 5px 5px
+    //     &:hover
+    //         &:before, &:after
+    //             opacity: 1
+    //             transition: .3s opacity ease
+
+// .modal
+//     position: fixed
+//     z-index: 999
+//     top: 50%
+//     left: 50%
+//     transform: translate3d(-50%, -50%, 0)
+//     img
+//         border: 5px solid #fff
+//     p
+//         color: #fff
+//         font-size: 1.5rem
+//         font-weight: 700
+
+// .modal-overlay
+//     position: fixed
+//     z-index: 1
+//     height: 100%
+//     width: 100%
+//     background-color: rgba(0, 0, 0, 0.5)
+//     top: 0
+//     left: 0
+//     .modal-next, .modal-prev
+//         position: absolute
+//         right: 15%
+//         top: calc(50% - 25px)
+//         border-radius: 5px 5px
+//         height: 75px
+//         width: 50px
+//         line-height: 40px
+//         font-size: 6rem
+//         text-align: center
+//         z-index: 100
+//         color: #000
+//         text-decoration: none
+//         padding: 5px
+//         background: #fff
+//         border: 3px solid #fff
+//         &:hover
+//             border-color: #999
+//             color: #999
+//         &:active
+//             color: #000
+//     & .modal-prev
+//         left: 15%
+
+// .modal-body
+//     position: relative
+//     a
+//         position: absolute
+//         display: inline
+//         color: #222
+//         text-decoration: none
+//         line-height: 36px
+//         font-size: 30px
+//         font-weight: lighter
+//         background: #fff
+//         border-radius: 5px
+//         height: 40px
+//         width: 40px
+//         text-align: center
+//     img
+//         border-radius: 5px 5px
+//     .modal-close
+//         right: 0
+//         top: 0
+//         border-radius: 0 0 0 5px
+//         border: 1px solid #fff
+//         z-index: 100
+//         font-size: 3rem
+//         &:hover
+//             border-color: #999
+//             color: #999
+//         &:active
+//             color: #000
+
+// .modal-canvas
+//     width: auto
+//     height: auto
