@@ -3,7 +3,6 @@ import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 import '../../styles/Home.sass';
 import './IndexGallery.sass';
-// import { getPhotoParams } from '../../utils/helpers';
 
 React.useLayoutEffect = React.useEffect;
 
@@ -24,8 +23,6 @@ const PhotoGallery: FC<PhotoGalleryProps> = ({ data }) => {
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
-
-  console.log('gallery', data);
 
   const photoUrls = Object.keys(data).map((key: any) => {
     const src =

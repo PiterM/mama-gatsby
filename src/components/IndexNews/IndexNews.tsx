@@ -3,7 +3,7 @@ import '../../styles/Home.sass';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import parse from 'html-react-parser';
 import './IndexNews.sass';
-import { getParagraphText } from '../../utils/helpers';
+import { getParagraphText, pad } from '../../utils/helpers';
 
 interface IndexNewsProps {
   data: any;
@@ -14,7 +14,10 @@ const IndexNews: FC<IndexNewsProps> = ({ data: { section, news } }) => {
   const { altText, imageFile } = section.featuredImage.node;
   const { gatsbyImageData } = imageFile.childImageSharp;
   const newsTitle = news.jmSectionField.title;
-  const newsDate = news.jmSectionField.date;
+  const day = pad(new Date(news.jmSectionField.date).getDate(), 2);
+  const month = pad(new Date(news.jmSectionField.date).getMonth() + 1, 2);
+  const year = new Date(news.jmSectionField.date).getFullYear();
+  const newsDate = `${day}.${month}.${year}`;
   const newsBody = news.jmSectionField.body;
 
   return (
